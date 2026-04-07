@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <svg height="500" width="1000">
+        <ellipse cx="200" cy="100" rx="150" ry="70" style="fill: green" />
+      </svg>
+    </div>
+    <div>
+      <svg width="2000" height="2000">
+        <polygon
+          points="100 100, 200 200, 300 0"
+          style="fill: green; stroke: black"
+        />
+      </svg>
+    </div>
+    <div>
+      <svg width="1000" height="250">
+        <rect width="150" height="150" fill="orange">
+          <animate
+            attributeName="x"
+            from="0"
+            to="300"
+            dur="3s"
+            fill="freeze"
+            repeatCount="2"
+          />
+        </rect>
+      </svg>
+    </div>
+    <div>
+      <svg width="500" height="500">
+        <path d="M 0 0 L200 200 L200 0 Z" style="stroke: #000; fill: none" />
+      </svg>
+    </div>
+    <div>
+      <canvas id="canvas1" width="200" height="100"> </canvas>
+      <script>
+        var can = document.getElementById("canvas1");
+        var ctx = can.getContext("2d");
+      </script>
+    </div>
+  </body>
+</html>
